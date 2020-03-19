@@ -191,7 +191,7 @@ nav > a{
 
 }
 
-a:nth-of-type(1) {
+a.active {
     color: rgba(0, 0, 0, 0.9);
 }
 
@@ -469,6 +469,8 @@ footer > div {
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 1px 5px 0px 0px rgba(0,0,0,0.15);
+
     
     
 }
@@ -486,6 +488,7 @@ footer > div {
     border-radius: 9999px;
     background-color: white;
     text-shadow: black;
+    color: black;
 }
 
 .contactpage .col-2 {
@@ -561,7 +564,7 @@ h3{
 .map{
     background-image: url(/img/map.png);
     width: 100%;
-    height: 500px;
+    height: 575px;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
