@@ -11,7 +11,8 @@ body {
     height: auto;
     background-color: aliceblue;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 *, *:after, *:before {
@@ -22,6 +23,7 @@ body {
 
 .grid-frame{
     width: 80vw;
+    min-width: 1040px;
     height: auto;
     
     background-color: tomato;
@@ -37,13 +39,42 @@ body {
     grid-column-gap: 0px;
     grid-row-gap: 0px;
 }
-header{
+header.homepage{
     grid-area: 1 / 1 / 3 / 2;
     background-color:#C7DDEA;   
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+header.contactpage{
+    width: 100%;
+    min-width: 1165px;
+    height: 500px;
+    background-color: #C7DDEA;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    justify-content: start;
+    position: relative;   
+
+}
+
+.contactpage h1{
+    align-self: center;
+    margin-bottom: 250px;
+}
+.contactpage .picture-container{
+    width: 400px;
+    height: 90%;
+    transform: translate(0);
+    background-image: url("/img/man-and-baby.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+}
+
+
+
 
 header > h1{
     text-align: left;
@@ -256,6 +287,9 @@ main{
     flex-direction: column-reverse;
     align-items: center;
 
+}
+.child > img{
+    margin-left: 10%;
 }
 
 .adult{
